@@ -1,16 +1,17 @@
-# This is a sample Python script.
+from user import User
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+user1 = User('Tyler', 'Maxwell', 'tdog@aol.com', 39)
+user2 = User('Buddy', 'Reed', 'bdog@gmail.com', 24)
+user3 = User('Ryan', 'Roesing', 'rdog@earthlink.net', 25)
 
+user1.display_info()
+user1.enroll()
+user1.display_info()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+user1.spend_points(50)
+user2.enroll()
+user2.spend_points(80)
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+user1.display_info()
+user2.display_info()
+user3.display_info()
